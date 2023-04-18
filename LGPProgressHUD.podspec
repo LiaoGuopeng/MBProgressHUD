@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
   s.homepage     = "http://www.bukovinski.com"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author             = { 'LIAOGUOPENG' => '756581014@qq.com' }
+  s.platform     = :ios, '11.0'
   s.source       = { :git => "https://github.com/LiaoGuopeng/MBProgressHUD.git", :tag => s.version.to_s }
-  s.ios.deployment_target = '9.0'
-  s.tvos.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
   s.source_files = '*.{h,m}'
   s.resource = '*.bundle'
   s.frameworks   = "CoreGraphics", "QuartzCore"
