@@ -9,6 +9,7 @@
 #import "MBHudDemoViewController.h"
 #import "MBProgressHUD.h"
 #import <QuartzCore/QuartzCore.h>
+#import "MBProgressHUD+LGPCategory.h"
 
 @interface MBExample : NSObject
 
@@ -60,11 +61,30 @@
         [MBExample exampleWithTitle:@"NSURLSession" selector:@selector(networkingExample)],
         [MBExample exampleWithTitle:@"Determinate with NSProgress" selector:@selector(determinateNSProgressExample)],
         [MBExample exampleWithTitle:@"Dim background" selector:@selector(dimBackgroundExample)],
-        [MBExample exampleWithTitle:@"Colored" selector:@selector(colorExample)]]
+        [MBExample exampleWithTitle:@"Colored" selector:@selector(colorExample)]],
+      @[[MBExample exampleWithTitle:@"show" selector:@selector(show)],
+        [MBExample exampleWithTitle:@"dismiss" selector:@selector(dismiss)],
+        [MBExample exampleWithTitle:@"showSuccess" selector:@selector(showSuccess)],
+        [MBExample exampleWithTitle:@"showError" selector:@selector(showError)]],
       ];
 }
 
 #pragma mark - Examples
+- (void)show{
+    [MBProgressHUD show];
+}
+
+- (void)dismiss{
+    [MBProgressHUD dismiss];
+}
+
+- (void)showSuccess{
+    [MBProgressHUD showSuccessWithStatus:@"上传成功"];
+}
+
+- (void)showError{
+    [MBProgressHUD showErrorWithStatus:@"上传失败"];
+}
 
 - (void)indeterminateExample {
     // Show the HUD on the root view (self.view is a scrollable table view and thus not suitable,

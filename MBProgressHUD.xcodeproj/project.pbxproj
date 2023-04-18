@@ -16,6 +16,8 @@
 		D286A7531518C70F00E13FB8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D286A7521518C70F00E13FB8 /* MBProgressHUD.m */; };
 		D286A75E1518C89600E13FB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D286A75D1518C89600E13FB8 /* UIKit.framework */; };
 		D286A76F1518CAAD00E13FB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D286A76E1518CAAD00E13FB8 /* CoreGraphics.framework */; };
+		D509977E29EE6F540001554D /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D509977D29EE6F540001554D /* MBProgressHUD.bundle */; };
+		D509977F29EE6F540001554D /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D509977D29EE6F540001554D /* MBProgressHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,7 @@
 		D286A7521518C70F00E13FB8 /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = SOURCE_ROOT; };
 		D286A75D1518C89600E13FB8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D286A76E1518CAAD00E13FB8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D509977D29EE6F540001554D /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 		D286A74E1518C70F00E13FB8 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				D509977D29EE6F540001554D /* MBProgressHUD.bundle */,
 				D286A7511518C70F00E13FB8 /* MBProgressHUD.h */,
 				D286A7521518C70F00E13FB8 /* MBProgressHUD.m */,
 				1315DD72178044770032507D /* Supporting Files */,
@@ -241,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D509977F29EE6F540001554D /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D509977E29EE6F540001554D /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
